@@ -1,4 +1,43 @@
 body {
     background-color: white;
-    padding: 50px;
+    margin: 0;
+    padding: 0
+}
+
+/* ======================================================= */
+/* FULLSCREEN VIDEO - OBJECT FIT
+/* ======================================================= */
+.video-container {
+    position: relative; /* Mandatory */
+    overflow: hidden; /* Mandatory */
+    width:100%; /* Mandatory */
+    height: 65vh;
+
+    background-color: #000; /* OPTIONAL */
+}
+
+.video-container > video {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+    
+.video-container > video::-webkit-media-controls {
+    display: none !important;
+}
+
+/* These can be adjusted based on project */
+@media only screen and (min-width: 680px) {
+    .video-container {
+        height: 90vh; 
+    }   
+}
+
+@media only screen and (min-width: 1025px) {
+    .video-container {
+        height: calc(100vh - 54px);
+    }  
 }
