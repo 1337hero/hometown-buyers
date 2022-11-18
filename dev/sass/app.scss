@@ -1,9 +1,56 @@
 body {
-    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: #162d3e;
+    background-color: #ffffff; 
     margin: 0;
-    padding: 0
+    padding: 0;
+    text-align: center; 
 }
 
+div {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+        header,
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 25px 5%;
+        }
+        .logo {
+            margin: 0 auto;
+        }
+        .logo > img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+        }
+        .container {
+            width: 100%;
+        }
+        footer {
+            padding:25px 5%;
+            text-align: center;
+            font-size: 14px;
+            color: #131313;
+        }
+
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    .number {
+        font-size: 24px;
+        font-weight: 700;
+    }
 /* ======================================================= */
 /* FULLSCREEN VIDEO - OBJECT FIT
 /* ======================================================= */
